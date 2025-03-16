@@ -7,7 +7,7 @@ from datetime import timedelta
 app = Dash(__name__)
 
 # 读取 Excel 文件
-file_path = "/Users/siyuanxu/Desktop/Desktop - Sierra’s MacBook Air/ZQ/s/数据可视化/GLDI底稿0304(3).xlsx"   # 替换为你的 Excel 文件路径
+file_path = "assets/GLDI底稿0304(3).xlsx"   # 替换为你的 Excel 文件路径
 df_price = pd.read_excel(file_path, sheet_name="行业-价", index_col=0)
 df_price_volume = pd.read_excel(file_path, sheet_name="行业-价-量-分位数", index_col=0)
 df_close_price = pd.read_excel(file_path, sheet_name="收盘价", index_col=0)
